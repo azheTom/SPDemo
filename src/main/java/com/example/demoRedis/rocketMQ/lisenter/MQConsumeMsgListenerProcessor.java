@@ -32,7 +32,7 @@ public class MQConsumeMsgListenerProcessor implements MessageListenerConcurrentl
         //logger.info("接收到的消息是："+messageExt.toString());
         logger.info("接收到的消息是："+msg);
         if(messageExt.getTopic().equals("TopicTest")){
-            if(messageExt.getTags().equals("test")){
+            if(("test").equals(messageExt.getTags())){
                 int reconsumeTimes = messageExt.getReconsumeTimes();
                 if(reconsumeTimes == 3){
                     return ConsumeConcurrentlyStatus.RECONSUME_LATER;

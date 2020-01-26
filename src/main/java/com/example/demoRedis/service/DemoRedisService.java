@@ -10,4 +10,6 @@ public interface DemoRedisService {
     Object setOrderMessage(Integer id);
 
     String decOrderCount(Integer id, Integer count);
+
+    boolean sendMessage(String message);
 }
