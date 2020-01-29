@@ -65,7 +65,7 @@ public class MQConsumerConfiguration {
          */
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
         /**
-         * 设置消费模型，集群还是广播，默认为集群
+         * 设置消费模型，负载均衡还是广播，默认为负载 MessageModel.CLUSTERING
          */
         //consumer.setMessageModel(MessageModel.CLUSTERING);
 
